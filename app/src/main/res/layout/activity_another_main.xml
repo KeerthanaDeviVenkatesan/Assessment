@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnotherMainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_layout" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_data_array_24"
+            android:text="RemoteData" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_sd_storage_24"
+            android:text="LocalStorage" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_storage_24"
+            android:text="UserDetails" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+
+</RelativeLayout>
